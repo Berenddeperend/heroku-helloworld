@@ -26,8 +26,8 @@ app.listen(port, () => {
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.get('/', (req,res) => {
-// 	res.send("Invalid page");
-// });
+app.get('/', (req,res) => {
+	res.render('public/index');
+});
 
 
